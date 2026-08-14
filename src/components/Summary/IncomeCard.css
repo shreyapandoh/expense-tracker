@@ -1,0 +1,16 @@
+.income-card {
+  padding: 20px 90px;
+  background-color: #5f9ea052;
+  border-radius: 4px;
+  box-shadow: 3px 3px 150px rgba(0, 0, 0, 0.3);
+}
+.income-card h3 {
+  font-size: x-large;
+}
+.income-card p {
+  color: #c86e07;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+}
+
+/* 649Aa@@gnrj946@## */

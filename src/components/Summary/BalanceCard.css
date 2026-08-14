@@ -1,0 +1,10 @@
+.balance-content h1 {
+  font-weight: lighter;
+  color: #161e36;
+}
+.balance-content span {
+  font-weight: 600;
+  color: #d57606;
+  font-size: 24px;
+  font-family: "Roboto Mono", monospace;
+}
