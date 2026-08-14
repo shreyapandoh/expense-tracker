@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./TransactionItem.css";
 
-const TransactionItem = () => {
-  const [sign, setSign] = useState("+");
+const TransactionItem = ({ trans }) => {
+  const sign = trans.type === "earnings" ? "+" : "-";
   return (
     <>
       <div className="transaction-item-section">
-        <h3 className="transaction-category">Salary</h3>
+        <h3 className="transaction-category">{trans.title}</h3>
         <div className="transaction-actions">
           <p
             className={
@@ -15,7 +15,7 @@ const TransactionItem = () => {
                 : "transaction-amount loss"
             }
           >
-            {sign} 1800000
+            {sign} ₹{trans.amount}
           </p>
           <button className="edit">Edit</button>
           <button className="delete">Delete</button>

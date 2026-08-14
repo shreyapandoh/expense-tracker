@@ -1,15 +1,15 @@
 import React from "react";
 import { calculateExpenses } from "../../utils/transactionUtils";
-import { transaction } from "../../data/transaction";
+import { transactions } from "../../data/transaction";
 import "./ExpenseCard.css";
 
 const ExpenseCard = () => {
-  const expenses = calculateExpenses(transaction);
+  const expenses = calculateExpenses(transactions);
   return (
     <>
       <div className="expense-card">
         <h3>Expenses</h3>
-        <p>₹ {expenses}</p>
+        <p>₹{expenses}</p>
       </div>
     </>
   );

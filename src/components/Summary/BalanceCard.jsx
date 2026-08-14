@@ -1,15 +1,15 @@
 import React from "react";
 import { calculateBalance } from "../../utils/transactionUtils";
-import { transaction } from "../../data/transaction";
+import { transactions } from "../../data/transaction";
 import "./BalanceCard.css";
 
 const Balance = () => {
-  const transactionBalance = calculateBalance(transaction);
+  const transactionBalance = calculateBalance(transactions);
   return (
     <>
       <div className="balance-content">
         <h1>Total Balance: </h1>
-        <span>₹ {transactionBalance}</span>
+        <span>₹{transactionBalance}</span>
       </div>
     </>
   );

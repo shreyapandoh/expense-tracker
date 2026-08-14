@@ -1,15 +1,15 @@
 import React from "react";
 import { calculateEarnings } from "../../utils/transactionUtils";
-import { transaction } from "../../data/transaction";
+import { transactions } from "../../data/transaction";
 import "./IncomeCard.css";
 
 const IncomeCard = () => {
-  const earnings = calculateEarnings(transaction);
+  const earnings = calculateEarnings(transactions);
   return (
     <>
       <div className="income-card">
         <h3>Income</h3>
-        <p>₹ {earnings}</p>
+        <p>₹{earnings}</p>
       </div>
     </>
   );

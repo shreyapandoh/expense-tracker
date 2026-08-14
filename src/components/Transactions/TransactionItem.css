@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 10px;
-  background: #00486e;
+  background: #3e4d6e;
   padding: 15px;
   /* box-shadow: 6px 3px 9px rgb(83 83 83 / 49%); */
   box-shadow: 9px 9px 31px rgb(0 0 0 / 61%);
@@ -33,8 +33,8 @@
   font-weight: 600;
 }
 .transaction-amount.gain {
-  color: #86efac;
+  color: #7dd68a;
 }
 .transaction-amount.loss {
-  color: #ef4444;
+  color: #ff9090;
 }
